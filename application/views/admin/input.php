@@ -53,7 +53,7 @@
                             <option value="9">Tempat Ibadah</option>
                             <option value="10">Ruang Bimbingan Konseling</option>
                             <option value="11">Ruang UKS</option>
-                            <option value="12">Ruang Osis</option>
+                            <option value="12">Ruang Office</option>
                             <option value="13">Gedung Olahraga</option>
                             <option value="14">Gudang</option>
                         <?php endif; ?>
