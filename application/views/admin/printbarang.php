@@ -443,7 +443,7 @@
 
                     <tr style="background-color: #F1F1F1">
                         <th>M</th>
-                        <th colspan="7">SARANA PRASARANA RUANG OSIS</th>
+                        <th colspan="7">SARANA PRASARANA RUANG OFFICE</th>
                     </tr>
                     <?php if (empty($barangruangosis)): ?>
                         <tr>
