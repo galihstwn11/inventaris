@@ -105,7 +105,7 @@
 
                         <!-- Jika login sebagai Kepala Laboratorium -->
                         <?php if (pg_osis()): ?>
-                            <option value="12">Ruang Osis</option>
+                            <option value="12">Ruang Office</option>
                         <?php endif; ?>
 
                     </select>
