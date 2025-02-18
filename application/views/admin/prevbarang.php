@@ -570,6 +570,39 @@
                         </tr>
                     <?php endforeach ?>
 
+                        <tr style="background-color: #F1F1F1">
+                        <th>O</th>
+                        <th colspan="7">SARANA PRASARANA KELAS</th>
+                    </tr>
+                    <?php if (empty($barangruangkelas)): ?>
+                        <tr>
+                            <td colspan="8">Belum ada data</td>
+                        </tr>
+                    <?php endif ?>
+                    <?php foreach ($barangruangkelas as $brg16): ?>
+                        <tr>
+                            <td><?= $brg16->kodeBarang; ?></td>
+                            <td><?= $brg16->namaBarang; ?></td>
+                            <td class="text-right"><?= $brg16->jmlSemua; ?></td>
+                            <td class="text-right"><?= $brg16->jmlBaik; ?></td>
+                            <td class="text-right"><?= $brg16->jmlRskRingan; ?></td>
+                            <td class="text-right"><?= $brg16->jmlRskBerat; ?></td>
+                            <td class="text-right"><?= $brg16->jmlPerlu; ?></td>
+                            <td class="text-right" nowrap="">
+                                <?php $selisih16 = ((int)$brg16->jmlBaik - (int)$brg16->jmlPerlu);
+                                    if ($selisih16 > 0) {
+                                        echo '+ '.$selisih16;
+                                    } elseif ($selisih16 == 0) {
+                                        echo '';
+                                    } else {
+                                        echo $selisih16;
+                                    }
+                                    
+                                 ?>
+                            </td>
+                        </tr>
+                    <?php endforeach ?>
+
                 </tbody>
 
             </table>
