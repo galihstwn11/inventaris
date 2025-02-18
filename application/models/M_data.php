@@ -332,6 +332,13 @@ class M_data extends CI_Model {
 
 	function barangruanguru()
 	{
+		$this->db->where('jenisRuangan', '8');
+		$this->db->order_by('ceksnp', 'asc');
+		$data = $this->db->get('tb_datarekap');
+		return $data;
+	}
+	function barangrungkelas()
+	{
 		$this->db->where('jenisRuangan', '7');
 		$this->db->order_by('ceksnp', 'asc');
 		$data = $this->db->get('tb_datarekap');
